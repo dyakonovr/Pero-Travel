@@ -10,7 +10,7 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family), sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -36,7 +36,7 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;/* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
