@@ -7,11 +7,67 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
+@import "./components/tours";
 
-// тестовые стили, удалите их
-.page__body {
+// универсальные стили
+
+.socials {
+  &__link {
+    fill: none;
+    stroke: var(--white-color);
+    transition: stroke 0.15s ease-in-out;
+
+    &:hover {
+      stroke: var(--secondary-color);
+    }
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--main-color);
+}
+
+.btn {
+  @include gradient;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--vh);
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white-color);
+}
+
+// ?swiper
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: unset;
+  bottom: 0;
+  color: var(--main-color);
+}
+
+.swiper-button-next {
+  left: calc(24px + var(--middle-offset));
+}
+
+.swiper-button-disabled {
+  color: #c6c6c6;
+}
+
+.swiper-scrollbar {
+  margin: 0 0 0 calc(54px + var(--middle-offset));
+  width: calc(100% - 54px - var(--middle-offset) * 2);
+  height: 3px;
+}
+
+.swiper-scrollbar-drag {
+  background: var(--main-color);
 }
