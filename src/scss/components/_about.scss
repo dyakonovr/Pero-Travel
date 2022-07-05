@@ -1,5 +1,6 @@
 .about {
   position: relative;
+  padding: 0 0 116px;
 
   &__bg {
     position: absolute;
@@ -21,7 +22,6 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 0 0 300px;
   }
 
   &__wrapper {

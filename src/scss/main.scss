@@ -10,13 +10,35 @@
 @import "./components/hero";
 @import "./components/tours";
 @import "./components/about";
+@import "./components/kinds";
+@import "./components/gallery";
+@import "./components/feedback";
+@import "./components/request";
+@import "./components/footer";
 
 // универсальные стили
+
+// header
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+// .
 
 .socials {
   &__link {
     fill: none;
-    stroke: var(--white-color);
     transition: stroke 0.15s ease-in-out;
 
     &:hover {
@@ -42,6 +64,25 @@
   font-weight: 700;
   font-size: 14px;
   color: var(--white-color);
+}
+
+.view-all {
+  font-size: 14px;
+  color: var(--black-color);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-color);
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 0;
+  }
 }
 
 // ?swiper
@@ -72,4 +113,10 @@
 
 .swiper-scrollbar-drag {
   background: var(--main-color);
+}
+
+.swiper-controls {
+  position: relative;
+  top: 75px;
+  display: flex;
 }

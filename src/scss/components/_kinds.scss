@@ -1,0 +1,40 @@
+.kinds {
+  &__container {
+    padding: 150px var(--container-offset) 75px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 90px 0 0;
+    gap: var(--big-offset) var(--middle-offset);
+  }
+
+  &-item {
+    display: flex;
+
+    &__img {
+      width: 76px;
+      height: 75px;
+
+      &--correct {
+        height: 66px;
+      }
+    }
+
+    &__content {
+      margin: 0 0 0 var(--middle-offset);
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--main-color);
+    }
+
+    &__descr {
+      margin: var(--small-offset) 0 0;
+      color: var(--black-color);
+    }
+  }
+}

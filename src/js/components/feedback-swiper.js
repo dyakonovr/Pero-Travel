@@ -2,8 +2,8 @@ import Swiper, { Navigation, Scrollbar } from 'swiper';
 
 Swiper.use([Navigation, Scrollbar]);
 
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+const feedbackSwiper = new Swiper('.feedback-slider', {
+  slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -11,6 +11,6 @@ const swiper = new Swiper('.swiper', {
   },
   scrollbar: {
     el: '.swiper-scrollbar',
-    draggable: true,
+    draggable: false,
   },
 });

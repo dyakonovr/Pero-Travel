@@ -1,1 +1,2 @@
-import "./components/swiper";
+import "./components/tours-swiper";
+import "./components/feedback-swiper";

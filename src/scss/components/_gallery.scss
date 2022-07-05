@@ -1,0 +1,27 @@
+.gallery {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 var(--middle-offset);
+    gap: var(--middle-offset);
+  }
+
+  &__item {
+    &:nth-child(1) {
+      grid-column-end: 3 span;
+    }
+
+    &:nth-child(2) {
+      grid-row-end: 3 span;
+    }
+  }
+
+}

@@ -54,9 +54,9 @@
   }
 
   &__link {
+    margin: var(--big-offset) 0 0;
     width: 230px;
     height: 50px;
-    margin: var(--big-offset) 0 0;
 
     &::after {
       content: "";
@@ -70,9 +70,15 @@
     }
   }
 
-  &__social {
-    &:not(:first-child) {
-      margin: var(--small-offset) 0 0;
+  &-socials {
+    &__item {
+      &:not(:first-child) {
+        margin: var(--small-offset) 0 0;
+      }
+    }
+
+    &__link {
+      stroke: var(--white-color);
     }
   }
 }

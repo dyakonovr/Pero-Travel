@@ -15,7 +15,6 @@
     margin: 0 0 0 auto;
 
     &__list {
-      display: flex;
       align-items: center;
     }
 
@@ -27,11 +26,6 @@
 
     &__link {
       color: var(--white-color);
-      transition: color 0.15s ease-in-out;
-
-      &:hover {
-        color: var(--secondary-color);
-      }
     }
   }
 }

@@ -1,0 +1,43 @@
+.feedback {
+  &__container {
+    padding: 75px var(--container-offset);
+  }
+
+  &__upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-slider {
+    margin: 90px 0 0;
+    padding: 0 0 75px;
+  }
+
+  &-slide {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: var(--big-offset);
+    box-sizing: border-box;
+    background-color: #ededed;
+
+    &__img {
+      border-radius: 10px;
+    }
+
+    &__content {
+      margin: 0 0 0 var(--middle-offset);
+    }
+
+    &__name {
+      font-weight: 700;
+      color: var(--black-color);
+    }
+
+    &__text {
+      font-size: 15px;
+      color: var(--black-color);
+    }
+  }
+}
