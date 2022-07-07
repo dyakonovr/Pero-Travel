@@ -8,6 +8,14 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 90px 0 0;
     gap: var(--big-offset) var(--middle-offset);
+
+    @include tablet {
+      gap: var(--big-offset);
+    }
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-item {
@@ -36,5 +44,26 @@
       margin: var(--small-offset) 0 0;
       color: var(--black-color);
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--big-offset) auto 0;
+    max-width: 550px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &__btn {
+    margin: var(--middle-offset) 0 0;
+    width: 230px;
+    height: 50px;
   }
 }

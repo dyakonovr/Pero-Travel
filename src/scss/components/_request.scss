@@ -7,6 +7,7 @@
   background-image: url("../img/bgs/request-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--main-color);
 
   &__container {
     display: grid;
@@ -31,6 +32,11 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(10px);
+    }
+
+    @include small-tablet {
+      grid-column: 1 / span 2;
+      width: 100%;
     }
   }
 

@@ -27,10 +27,6 @@
 
   &__link {
     transition: color 0.15s ease-in-out;
-
-    &:hover {
-      color: var(--secondary-color);
-    }
   }
 }
 
@@ -40,10 +36,6 @@
   &__link {
     fill: none;
     transition: stroke 0.15s ease-in-out;
-
-    &:hover {
-      stroke: var(--secondary-color);
-    }
   }
 }
 
@@ -64,6 +56,19 @@
   font-weight: 700;
   font-size: 14px;
   color: var(--white-color);
+
+  &--arrow {
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 0 0 var(--small-offset);
+      width: 20px;
+      height: 10px;
+      background-image: url("../img/svg/arrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .view-all {

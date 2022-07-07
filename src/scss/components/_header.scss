@@ -26,6 +26,25 @@
 
     &__link {
       color: var(--white-color);
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  .burger {
+    @include burger;
+
+    display: none;
+
+    @include small-tablet {
+      display: block;
+      margin: 0 0 0 auto;
     }
   }
 }

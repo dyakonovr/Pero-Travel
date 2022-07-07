@@ -3,7 +3,6 @@ import Swiper, { Navigation, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Scrollbar]);
 
 const toursSwiper = new Swiper('.tours-slider', {
-  slidesPerView: 3,
   spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -13,4 +12,17 @@ const toursSwiper = new Swiper('.tours-slider', {
     el: '.swiper-scrollbar',
     draggable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    320: {
+      slidesPerView: 1,
+    }
+  }
 });

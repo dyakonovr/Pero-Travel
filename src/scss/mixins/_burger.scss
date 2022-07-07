@@ -2,21 +2,22 @@
 
 @mixin burger {
   --burger-width: 30px;
-  --burger-height: 30px;
-  --burger-line-height: 2px;
+  --burger-height: 25px;
+  --burger-line-height: 3px;
 
   position: relative;
   border: none;
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: var(--white-color);
   background-color: transparent;
   cursor: pointer;
 
   &::before,
   &::after {
     content: "";
+    border-radius: 10px;
     position: absolute;
     left: 0;
     width: 100%;
@@ -37,6 +38,7 @@
     position: absolute;
     left: 0;
     top: 50%;
+    border-radius: 10px;
     width: 100%;
     height: var(--burger-line-height);
     background-color: currentColor;
