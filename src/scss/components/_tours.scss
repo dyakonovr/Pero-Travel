@@ -9,6 +9,12 @@
     justify-content: space-between;
   }
 
+  .view-all {
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__link {
     font-size: 14px;
     color: var(--black-color);

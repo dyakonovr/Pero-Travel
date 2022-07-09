@@ -24,10 +24,18 @@
 
     &__img {
       border-radius: 10px;
+
+      @include mobile {
+        width: 80px;
+      }
     }
 
     &__content {
       margin: 0 0 0 var(--middle-offset);
+
+      @include mobile {
+        margin: var(--middle-offset) 0 0;
+      }
     }
 
     &__name {
@@ -38,6 +46,11 @@
     &__text {
       font-size: 15px;
       color: var(--black-color);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: baseline;
     }
   }
 }

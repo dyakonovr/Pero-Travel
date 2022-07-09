@@ -17,7 +17,7 @@ const toursSwiper = new Swiper('.tours-slider', {
       slidesPerView: 3,
     },
 
-    768: {
+    576: {
       slidesPerView: 2,
     },
 

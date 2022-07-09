@@ -38,11 +38,19 @@
       font-weight: 700;
       font-size: 20px;
       color: var(--main-color);
+
+      @include mobile {
+        font-size: 18px;
+      }
     }
 
     &__descr {
       margin: var(--small-offset) 0 0;
       color: var(--black-color);
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
   }
 
@@ -53,6 +61,10 @@
     justify-content: center;
     margin: var(--big-offset) auto 0;
     max-width: 550px;
+
+    @include mobile {
+      max-width: none;
+    }
   }
 
   &__descr {

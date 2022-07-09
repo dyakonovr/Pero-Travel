@@ -12,6 +12,11 @@
     @include small-tablet {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: var(--big-offset);
+    }
   }
 
   &__logo {

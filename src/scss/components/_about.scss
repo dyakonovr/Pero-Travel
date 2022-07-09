@@ -1,11 +1,9 @@
 .about {
   position: relative;
-  padding: 0 0 116px;
 
   &__bg {
-    position: absolute;
-    left: -10px;
-    top: 150px;
+    position: relative;
+    left: calc(-37% - 10px);
     border-radius: 10px;
     width: 1071px;
     height: 750px;
@@ -24,25 +22,34 @@
   }
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-
-    @include tablet {
-      grid-template-columns: repeat(6, 1fr);
-    }
+    position: relative;
+    padding: 150px 0 0;
   }
 
   &__wrapper {
-    position: relative;
+    position: absolute;
+    right: 60px;
+    top: calc(150px + 10%);
     z-index: 2;
-    grid-column: 7 / span 12;
-    margin: calc(150px + 140px) 0 0;
     border-radius: 10px;
     padding: 60px 85px 105px;
+    max-width: 540px;
     background-color: var(--gray-color);
 
-    @include tablet {
-      grid-column: 2 / span 5;
+    @include mobile {
+      margin: 200px 0 0;
+      padding: var(--big-offset);
+    }
+
+    @include small-tablet {
+      left: var(--container-offset);
+      right: 0;
+      width: calc(100% - var(--container-offset)*2);
+      max-width: none;
+    }
+
+    @include mobile {
+      top: var(--big-offset);
     }
   }
 
@@ -52,6 +59,10 @@
 
       &:first-child {
         margin: var(--big-offset) 0 0;
+      }
+
+      @include mobile {
+        font-size: 15px;
       }
     }
   }

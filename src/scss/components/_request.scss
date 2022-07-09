@@ -1,4 +1,5 @@
 .request {
+  position: relative;
   display: flex;
   margin: 75px 0 0;
   width: 100%;
@@ -32,11 +33,19 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(10px);
+
+      @include mobile {
+        display: none;
+      }
     }
 
     @include small-tablet {
       grid-column: 1 / span 2;
       width: 100%;
+    }
+
+    @include mobile {
+      padding: var(--big-offset) 0 0;
     }
   }
 
@@ -75,6 +84,10 @@
       color: var(--white-color);
       opacity: 1;
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -83,5 +96,23 @@
     width: 230px;
     height: 50px;
     cursor: pointer;
+
+    @include mobile {
+      align-self: center;
+    }
+  }
+
+  @include mobile {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
   }
 }
