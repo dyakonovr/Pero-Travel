@@ -4,6 +4,9 @@
   position: relative;
 
   &__field {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
     appearance: none;
     position: absolute;
   }

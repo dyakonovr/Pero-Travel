@@ -1,0 +1,518 @@
+<section class="tours">
+  <div class="container tours__container">
+    <form class="tours__parameters">
+      <h2 class="tours__subtitle">Фильтры</h2>
+      <div class="tours-parameter accordion">
+        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+          <span class="tours-parameter__title accordion__title">Стоимость</span>
+          <span class="tours-parameter__toggle accordion__btn"></span>
+        </button>
+        <div class="tours-parameter__lower accordion__content" aria-hidden="true">
+          <div class="tours-parameter__inputs">
+            <div class="tours-parameter__price">
+              <input type="text" id="input-0">
+            </div>
+            <div class="tours-parameter__price">
+              <input type="text" id="input-1">
+            </div>
+          </div>
+          <div class="tours-parameter__slider range-slider slider-js"></div>
+        </div>
+      </div>
+      <div class="tours-parameter accordion">
+        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+          <span class="tours-parameter__title accordion__title">Количество человек</span>
+          <span class="tours-parameter__toggle accordion__btn"></span>
+        </button>
+        <div class="tours-parameter__grid accordion__content parameter-btns" aria-hidden="true">
+          <button class="tours-parameter__btn parameter-btn tours-parameter__btn--active btn-reset">1 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">2 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">3 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">4 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">5 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">6 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">7 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">8 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">9 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">10 чел.</button>
+          <button class="tours-parameter__btn parameter-btn btn-reset">Более 10 чел.</button>
+        </div>
+      </div>
+      <div class="tours-parameter accordion">
+        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+          <span class="tours-parameter__title accordion__title">Место</span>
+          <span class="tours-parameter__toggle accordion__btn"></span>
+        </button>
+        <div class="tours-parameter__content accordion__content" aria-hidden="true">
+          <label class="custom-checkbox tours-parameter__label">
+            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+            <span class="custom-checkbox__content checkbox-js">Абхазия</span>
+          </label>
+          <label class="custom-checkbox tours-parameter__label">
+            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+            <span class="custom-checkbox__content checkbox-js">Красная поляна</span>
+          </label>
+          <label class="custom-checkbox tours-parameter__label">
+            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+            <span class="custom-checkbox__content checkbox-js">Сочи</span>
+          </label>
+          <label class="custom-checkbox tours-parameter__label">
+            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+            <span class="custom-checkbox__content checkbox-js">Москва</span>
+          </label>
+        </div>
+      </div>
+      <div class="tours-parameter accordion">
+        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+          <span class="tours-parameter__title accordion__title">Длительность</span>
+          <span class="tours-parameter__toggle accordion__btn"></span>
+        </button>
+      </div>
+      <div class="tours-parameter accordion">
+        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+          <span class="tours-parameter__title accordion__title">Дата</span>
+          <span class="tours-parameter__toggle accordion__btn"></span>
+        </button>
+      </div>
+      <input type="submit" value="Показать" class="tours__submit btn btn-reset">
+      <button class="tours__reset reset-btn-js btn-reset">Сбросить фильтры</button>
+    </form>
+    <div class="tours__catalog">
+      <h2 class="title tours__title">Наши туры</h2>
+      <ul class="tours__list list-reset">
+        <li class="tours-item">
+          <img src="img/tours-preview/1.jpg" alt="" class="tours-item__img">
+          <div class="tours-item__content">
+            <span class="tours-item__type">Автобусный тур</span>
+            <strong class="tours-item__name">Золотое кольцо Абхазии (из&nbsp;Адлера)</strong>
+            <ul class="tours-item__wrapper list-reset">
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6"
+                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 618 &#8381;</span>
+                <span class="tours-item__descr">Взрослый билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6"
+                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 412 &#8381;</span>
+                <span class="tours-item__descr">Детский билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data tours-item__data--duration">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 11.625C4.88748 11.625 3.79995 11.2951 2.87492 10.677C1.94989 10.0589 1.22892 9.18043 0.80318 8.1526C0.377437 7.12476 0.266043 5.99376 0.483085 4.90262C0.700127 3.81148 1.23586 2.8092 2.02253 2.02253C2.8092 1.23586 3.81148 0.700127 4.90262 0.483085C5.99376 0.266043 7.12476 0.377437 8.1526 0.80318C9.18043 1.22892 10.0589 1.94989 10.677 2.87492C11.2951 3.79995 11.625 4.88748 11.625 6C11.625 7.49184 11.0324 8.92259 9.97748 9.97748C8.92259 11.0324 7.49184 11.625 6 11.625ZM6 1.125C5.03582 1.125 4.09329 1.41092 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89673 1.87108 8.76537 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51775 9.5101 10.0534 8.70841C10.5891 7.90672 10.875 6.96419 10.875 6C10.875 4.70707 10.3614 3.4671 9.44715 2.55286C8.53291 1.63862 7.29293 1.125 6 1.125Z" />
+                    <path
+                      d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z" />
+                  </svg>
+                  2,5&nbsp;часа</span>
+              </li>
+            </ul>
+            <p class="tours-item__text">Вас ждет путешествие по&nbsp;&laquo;Золотому Кольцу Абхазии&raquo;
+              на&nbsp;Мерседес Спринтер (20&nbsp;мест).
+              По&nbsp;маршруту вас будет сопровождать профессиональный гид. Посадка на&nbsp;экскурсию осуществляется
+              с&nbsp;вашего
+              отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+            <div class="tours-item__btns">
+              <a href="#" class="tours-item__link btn">Подробнее</a>
+              <button class="tours-item__like btn-reset btn-like-js">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="tours-item">
+          <img src="img/tours-preview/1.jpg" alt="" class="tours-item__img">
+          <div class="tours-item__content">
+            <span class="tours-item__type">Автобусный тур</span>
+            <strong class="tours-item__name">Золотое кольцо Абхазии (из&nbsp;Адлера)</strong>
+            <ul class="tours-item__wrapper list-reset">
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 618 &#8381;</span>
+                <span class="tours-item__descr">Взрослый билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 412 &#8381;</span>
+                <span class="tours-item__descr">Детский билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data tours-item__data--duration">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 11.625C4.88748 11.625 3.79995 11.2951 2.87492 10.677C1.94989 10.0589 1.22892 9.18043 0.80318 8.1526C0.377437 7.12476 0.266043 5.99376 0.483085 4.90262C0.700127 3.81148 1.23586 2.8092 2.02253 2.02253C2.8092 1.23586 3.81148 0.700127 4.90262 0.483085C5.99376 0.266043 7.12476 0.377437 8.1526 0.80318C9.18043 1.22892 10.0589 1.94989 10.677 2.87492C11.2951 3.79995 11.625 4.88748 11.625 6C11.625 7.49184 11.0324 8.92259 9.97748 9.97748C8.92259 11.0324 7.49184 11.625 6 11.625ZM6 1.125C5.03582 1.125 4.09329 1.41092 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89673 1.87108 8.76537 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51775 9.5101 10.0534 8.70841C10.5891 7.90672 10.875 6.96419 10.875 6C10.875 4.70707 10.3614 3.4671 9.44715 2.55286C8.53291 1.63862 7.29293 1.125 6 1.125Z" />
+                    <path
+                      d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z" />
+                  </svg>
+                  2,5&nbsp;часа</span>
+              </li>
+            </ul>
+            <p class="tours-item__text">Вас ждет путешествие по&nbsp;&laquo;Золотому Кольцу Абхазии&raquo;
+              на&nbsp;Мерседес Спринтер (20&nbsp;мест).
+              По&nbsp;маршруту вас будет сопровождать профессиональный гид. Посадка на&nbsp;экскурсию осуществляется
+              с&nbsp;вашего
+              отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+            <div class="tours-item__btns">
+              <a href="#" class="tours-item__link btn">Подробнее</a>
+              <button class="tours-item__like btn-reset btn-like-js">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="tours-item">
+          <img src="img/tours-preview/1.jpg" alt="" class="tours-item__img">
+          <div class="tours-item__content">
+            <span class="tours-item__type">Автобусный тур</span>
+            <strong class="tours-item__name">Золотое кольцо Абхазии (из&nbsp;Адлера)</strong>
+            <ul class="tours-item__wrapper list-reset">
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 618 &#8381;</span>
+                <span class="tours-item__descr">Взрослый билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 412 &#8381;</span>
+                <span class="tours-item__descr">Детский билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data tours-item__data--duration">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 11.625C4.88748 11.625 3.79995 11.2951 2.87492 10.677C1.94989 10.0589 1.22892 9.18043 0.80318 8.1526C0.377437 7.12476 0.266043 5.99376 0.483085 4.90262C0.700127 3.81148 1.23586 2.8092 2.02253 2.02253C2.8092 1.23586 3.81148 0.700127 4.90262 0.483085C5.99376 0.266043 7.12476 0.377437 8.1526 0.80318C9.18043 1.22892 10.0589 1.94989 10.677 2.87492C11.2951 3.79995 11.625 4.88748 11.625 6C11.625 7.49184 11.0324 8.92259 9.97748 9.97748C8.92259 11.0324 7.49184 11.625 6 11.625ZM6 1.125C5.03582 1.125 4.09329 1.41092 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89673 1.87108 8.76537 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51775 9.5101 10.0534 8.70841C10.5891 7.90672 10.875 6.96419 10.875 6C10.875 4.70707 10.3614 3.4671 9.44715 2.55286C8.53291 1.63862 7.29293 1.125 6 1.125Z" />
+                    <path
+                      d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z" />
+                  </svg>
+                  2,5&nbsp;часа</span>
+              </li>
+            </ul>
+            <p class="tours-item__text">Вас ждет путешествие по&nbsp;&laquo;Золотому Кольцу Абхазии&raquo;
+              на&nbsp;Мерседес Спринтер (20&nbsp;мест).
+              По&nbsp;маршруту вас будет сопровождать профессиональный гид. Посадка на&nbsp;экскурсию осуществляется
+              с&nbsp;вашего
+              отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+            <div class="tours-item__btns">
+              <a href="#" class="tours-item__link btn">Подробнее</a>
+              <button class="tours-item__like btn-reset btn-like-js">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="tours-item">
+          <img src="img/tours-preview/1.jpg" alt="" class="tours-item__img">
+          <div class="tours-item__content">
+            <span class="tours-item__type">Автобусный тур</span>
+            <strong class="tours-item__name">Золотое кольцо Абхазии (из&nbsp;Адлера)</strong>
+            <ul class="tours-item__wrapper list-reset">
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 618 &#8381;</span>
+                <span class="tours-item__descr">Взрослый билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.7 4.41997C11.401 4.41997 12.78 3.92748 12.78 3.31997C12.78 2.71246 11.401 2.21997 9.7 2.21997C7.99896 2.21997 6.62 2.71246 6.62 3.31997C6.62 3.92748 7.99896 4.41997 9.7 4.41997Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M6.62 3.54004C6.62 3.74068 6.62 4.6594 6.62 4.86004C6.62 5.46746 7.99852 5.96004 9.7 5.96004C11.4015 5.96004 12.78 5.46746 12.78 4.86004C12.78 4.6594 12.78 3.74068 12.78 3.54004"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.62 5.07996C6.62 5.2806 6.62 6.01936 6.62 6.01936" stroke-width="0.6" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M8.36853 10.4722C8.77135 10.5413 9.22301 10.58 9.69997 10.58C11.4015 10.58 12.78 10.0877 12.78 9.48003C12.78 9.27939 12.78 8.36067 12.78 8.16003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                      stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  1 412 &#8381;</span>
+                <span class="tours-item__descr">Детский билет</span>
+              </li>
+              <li class="tours-item__info">
+                <span class="tours-item__data tours-item__data--duration">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 11.625C4.88748 11.625 3.79995 11.2951 2.87492 10.677C1.94989 10.0589 1.22892 9.18043 0.80318 8.1526C0.377437 7.12476 0.266043 5.99376 0.483085 4.90262C0.700127 3.81148 1.23586 2.8092 2.02253 2.02253C2.8092 1.23586 3.81148 0.700127 4.90262 0.483085C5.99376 0.266043 7.12476 0.377437 8.1526 0.80318C9.18043 1.22892 10.0589 1.94989 10.677 2.87492C11.2951 3.79995 11.625 4.88748 11.625 6C11.625 7.49184 11.0324 8.92259 9.97748 9.97748C8.92259 11.0324 7.49184 11.625 6 11.625ZM6 1.125C5.03582 1.125 4.09329 1.41092 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89673 1.87108 8.76537 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51775 9.5101 10.0534 8.70841C10.5891 7.90672 10.875 6.96419 10.875 6C10.875 4.70707 10.3614 3.4671 9.44715 2.55286C8.53291 1.63862 7.29293 1.125 6 1.125Z" />
+                    <path
+                      d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z" />
+                  </svg>
+                  2,5&nbsp;часа</span>
+              </li>
+            </ul>
+            <p class="tours-item__text">Вас ждет путешествие по&nbsp;&laquo;Золотому Кольцу Абхазии&raquo;
+              на&nbsp;Мерседес Спринтер (20&nbsp;мест).
+              По&nbsp;маршруту вас будет сопровождать профессиональный гид. Посадка на&nbsp;экскурсию осуществляется
+              с&nbsp;вашего
+              отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...</p>
+            <div class="tours-item__btns">
+              <a href="#" class="tours-item__link btn">Подробнее</a>
+              <button class="tours-item__like btn-reset btn-like-js">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="tours__pages list-reset">
+        <li class="tours__arrow tours__arrow--left"></li>
+        <li class="tours__page tours__page--active"><a href="#">1</a></li>
+        <li class="tours__page"><a href="#">2</a></li>
+        <li class="tours__page">...</li>
+        <li class="tours__page"><a href="#">5</a></li>
+        <li class="tours__arrow tours__arrow--right"></li>
+      </ul>
+    </div>
+  </div>
+</section>

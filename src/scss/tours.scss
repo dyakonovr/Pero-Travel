@@ -1,0 +1,23 @@
+// базовые подключения
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+
+.main {
+  background-color: #fbfbfb;
+}
+
+@import "./components/header";
+@import "./components/trs-hero";
+@import "./components/trs-filters";
+@import "./components/trs-tours";
+@import "./components/footer";
+
+// универсальные стили
+
+@import "universal";
+

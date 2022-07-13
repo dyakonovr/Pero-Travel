@@ -1,12 +1,14 @@
 .tours {
-  &__container {
-    padding: 150px var(--container-offset) 0;
-  }
+  padding: 150px 0 0;
 
   &__upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
   }
 
   .view-all {
@@ -92,32 +94,22 @@
 
     &__time {
       display: inline-flex;
+      align-items: center;
 
-      &::before {
-        content: "";
-        display: flex;
+      svg {
         margin: 0 3px 0 0;
-        width: 15px;
-        height: 15px;
-        background-image: url("../img/svg/clock.svg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        stroke: var(--white-color);
       }
     }
 
     &__price {
       display: inline-flex;
+      align-items: center;
       margin: 0 0 0 var(--small-offset);
 
-      &::before {
-        content: "";
-        display: flex;
+      svg {
         margin: 0 3px 0 0;
-        width: 15px;
-        height: 15px;
-        background-image: url("../img/svg/money.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        stroke: var(--white-color);
       }
     }
 

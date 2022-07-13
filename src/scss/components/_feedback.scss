@@ -1,12 +1,14 @@
 .feedback {
-  &__container {
-    padding: 75px var(--container-offset);
-  }
+  padding: 75px 0;
 
   &__upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
   }
 
   &-slider {

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 
-@include('partials/head.html')
+<head>
+  @include('partials/head.html')
+  <link rel="stylesheet" href="css/index.css">
+</head>
 
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      @include('partials/hero.html')
-      @include('partials/tours.html')
+      @include('partials/idx-hero.html')
+      @include('partials/idx-tours.html')
       @include('partials/about.html')
       @include('partials/kinds.html')
       @include('partials/gallery.html')

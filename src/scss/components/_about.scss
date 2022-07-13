@@ -26,6 +26,10 @@
     padding: 150px 0 0;
   }
 
+  &__title {
+    margin: 0;
+  }
+
   &__wrapper {
     position: absolute;
     right: 60px;
@@ -44,7 +48,7 @@
     @include small-tablet {
       left: var(--container-offset);
       right: 0;
-      width: calc(100% - var(--container-offset)*2);
+      width: calc(100% - var(--container-offset) * 2);
       max-width: none;
     }
 
