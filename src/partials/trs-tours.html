@@ -2,77 +2,79 @@
   <div class="container tours__container">
     <form class="tours__parameters">
       <h2 class="tours__subtitle">Фильтры</h2>
-      <div class="tours-parameter accordion">
-        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
-          <span class="tours-parameter__title accordion__title">Стоимость</span>
-          <span class="tours-parameter__toggle accordion__btn"></span>
-        </button>
-        <div class="tours-parameter__lower accordion__content" aria-hidden="true">
-          <div class="tours-parameter__inputs">
-            <div class="tours-parameter__price">
-              <input type="text" id="input-0">
+      <div class="tours__wrapper">
+        <div class="tours-parameter accordion">
+          <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+            <span class="tours-parameter__title accordion__title">Стоимость</span>
+            <span class="tours-parameter__toggle accordion__btn"></span>
+          </button>
+          <div class="tours-parameter__lower accordion__content" aria-hidden="true">
+            <div class="tours-parameter__inputs">
+              <div class="tours-parameter__price">
+                <input type="text" id="input-0">
+              </div>
+              <div class="tours-parameter__price">
+                <input type="text" id="input-1">
+              </div>
             </div>
-            <div class="tours-parameter__price">
-              <input type="text" id="input-1">
-            </div>
+            <div class="tours-parameter__slider range-slider slider-js"></div>
           </div>
-          <div class="tours-parameter__slider range-slider slider-js"></div>
         </div>
-      </div>
-      <div class="tours-parameter accordion">
-        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
-          <span class="tours-parameter__title accordion__title">Количество человек</span>
-          <span class="tours-parameter__toggle accordion__btn"></span>
-        </button>
-        <div class="tours-parameter__grid accordion__content parameter-btns" aria-hidden="true">
-          <button class="tours-parameter__btn parameter-btn tours-parameter__btn--active btn-reset">1 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">2 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">3 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">4 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">5 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">6 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">7 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">8 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">9 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">10 чел.</button>
-          <button class="tours-parameter__btn parameter-btn btn-reset">Более 10 чел.</button>
+        <div class="tours-parameter accordion">
+          <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+            <span class="tours-parameter__title accordion__title">Количество человек</span>
+            <span class="tours-parameter__toggle accordion__btn"></span>
+          </button>
+          <div class="tours-parameter__grid accordion__content parameter-btns" aria-hidden="true">
+            <button class="tours-parameter__btn parameter-btn tours-parameter__btn--active btn-reset">1 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">2 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">3 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">4 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">5 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">6 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">7 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">8 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">9 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">10 чел.</button>
+            <button class="tours-parameter__btn parameter-btn btn-reset">Более 10 чел.</button>
+          </div>
         </div>
-      </div>
-      <div class="tours-parameter accordion">
-        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
-          <span class="tours-parameter__title accordion__title">Место</span>
-          <span class="tours-parameter__toggle accordion__btn"></span>
-        </button>
-        <div class="tours-parameter__content accordion__content" aria-hidden="true">
-          <label class="custom-checkbox tours-parameter__label">
-            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
-            <span class="custom-checkbox__content checkbox-js">Абхазия</span>
-          </label>
-          <label class="custom-checkbox tours-parameter__label">
-            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
-            <span class="custom-checkbox__content checkbox-js">Красная поляна</span>
-          </label>
-          <label class="custom-checkbox tours-parameter__label">
-            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
-            <span class="custom-checkbox__content checkbox-js">Сочи</span>
-          </label>
-          <label class="custom-checkbox tours-parameter__label">
-            <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
-            <span class="custom-checkbox__content checkbox-js">Москва</span>
-          </label>
+        <div class="tours-parameter accordion">
+          <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+            <span class="tours-parameter__title accordion__title">Место</span>
+            <span class="tours-parameter__toggle accordion__btn"></span>
+          </button>
+          <div class="tours-parameter__content accordion__content" aria-hidden="true">
+            <label class="custom-checkbox tours-parameter__label">
+              <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+              <span class="custom-checkbox__content checkbox-js">Абхазия</span>
+            </label>
+            <label class="custom-checkbox tours-parameter__label">
+              <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+              <span class="custom-checkbox__content checkbox-js">Красная поляна</span>
+            </label>
+            <label class="custom-checkbox tours-parameter__label">
+              <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+              <span class="custom-checkbox__content checkbox-js">Сочи</span>
+            </label>
+            <label class="custom-checkbox tours-parameter__label">
+              <input type="checkbox" class="custom-checkbox__field tours-parameter__checkbox">
+              <span class="custom-checkbox__content checkbox-js">Москва</span>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="tours-parameter accordion">
-        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
-          <span class="tours-parameter__title accordion__title">Длительность</span>
-          <span class="tours-parameter__toggle accordion__btn"></span>
-        </button>
-      </div>
-      <div class="tours-parameter accordion">
-        <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
-          <span class="tours-parameter__title accordion__title">Дата</span>
-          <span class="tours-parameter__toggle accordion__btn"></span>
-        </button>
+        <div class="tours-parameter accordion">
+          <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+            <span class="tours-parameter__title accordion__title">Длительность</span>
+            <span class="tours-parameter__toggle accordion__btn"></span>
+          </button>
+        </div>
+        <div class="tours-parameter accordion">
+          <button class="tours-parameter__upper accordion__control btn-reset" aria-expanded="false">
+            <span class="tours-parameter__title accordion__title">Дата</span>
+            <span class="tours-parameter__toggle accordion__btn"></span>
+          </button>
+        </div>
       </div>
       <input type="submit" value="Показать" class="tours__submit btn btn-reset">
       <button class="tours__reset reset-btn-js btn-reset">Сбросить фильтры</button>

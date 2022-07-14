@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--middle-offset);
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__subtitle {
@@ -20,6 +25,26 @@
     height: fit-content;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
     background-color: var(--white-color);
+
+    @include tablet {
+      margin: 0 0 150px;
+    }
+
+    @include mobile {
+      padding: var(--middle-offset);
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--middle-offset) 80px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-parameter {
@@ -239,6 +264,10 @@
 
   &__catalog {
     grid-column: span 8;
+
+    @include tablet {
+      order: -1;
+    }
   }
 
   &__title {
@@ -253,16 +282,29 @@
 
     &:not(:last-child) {
       margin: 0 0 var(--middle-offset);
+
+      @include mobile {
+        margin: 0 0 var(--big-offset);
+      }
     }
 
     &__img {
       border-radius: 10px 0 0 10px;
+
+      @include mobile {
+        border-radius: 10px 10px 0 0;
+        height: 240px;
+      }
     }
 
     &__content {
       display: flex;
       flex-direction: column;
       padding: var(--middle-offset) var(--big-offset);
+
+      @include mobile {
+        padding: var(--middle-offset);
+      }
     }
 
     &__type {
@@ -279,6 +321,12 @@
     &__wrapper {
       display: flex;
       margin: var(--middle-offset) 0 0;
+
+      @include small-tablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: var(--small-offset);
+      }
     }
 
     &__info {
@@ -287,10 +335,10 @@
 
       &:nth-child(2) {
         margin: 0 0 0 var(--small-offset);
-      }
 
-      &--duration {
-        margin: 0 0 0 var(--big-offset);
+        @include small-tablet {
+          margin: 0;
+        }
       }
     }
 
@@ -308,6 +356,10 @@
 
       &--duration {
         margin: 0 0 0 var(--big-offset);
+
+        @include small-tablet {
+          margin: 0;
+        }
       }
     }
 
@@ -375,6 +427,10 @@
           stroke: var(--main-color);
         }
       }
+    }
+
+    @include mobile {
+      flex-direction: column;
     }
   }
 

@@ -22,14 +22,23 @@
   line-height: 29px;
   color: var(--main-color);
 
-  &--main {
-    font-size: 72px;
-    line-height: 88px;
-    color: var(--white-color);
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+.title-main {
+  font-size: 72px;
+  line-height: 88px;
+  color: var(--white-color);
+
+  @include tablet {
+    font-size: 48px;
   }
 
   @include mobile {
-    font-size: 22px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 

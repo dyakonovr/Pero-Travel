@@ -6,12 +6,28 @@
     padding: var(--big-offset);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
     background-color: var(--white-color);
+
+    @include tablet {
+      margin: 0 auto;
+      padding: var(--middle-offset);
+      width: fit-content;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__kinds {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--middle-offset);
+    }
   }
 
   &__kind {
@@ -31,6 +47,10 @@
       padding: var(--small-offset);
       color: var(--black-color);
       transition: color 0.15s ease-in-out;
+
+      @include tablet {
+        font-size: 14px;
+      }
     }
 
     &--active {
@@ -42,6 +62,10 @@
         color: var(--main-color);
       }
     }
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__form {
@@ -49,10 +73,22 @@
     align-items: center;
     justify-content: space-between;
     margin: var(--big-offset) 0 0;
+
+    @include tablet {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 235px);
+      gap: var(--middle-offset);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__input {
     position: relative;
+    margin: 0 var(--small-offset) 0 0;
 
     &::after {
       content: "";
@@ -67,6 +103,7 @@
     }
 
     input {
+      margin: 0;
       outline: none;
       border: none;
       border-radius: 10px;
@@ -74,6 +111,10 @@
       width: 235px;
       height: 50px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+      @include mobile {
+        width: 100%;
+      }
     }
 
     &--place {
@@ -101,5 +142,9 @@
     width: 235px;
     height: 50px;
     cursor: pointer;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

@@ -19,6 +19,6 @@
   &__container {
     position: relative;
     z-index: 1;
-    padding: calc(100px + 60px) 0 60px;
+    padding: calc(100px + 60px) var(--container-offset) 60px;
   }
 }
