@@ -1,0 +1,81 @@
+.important {
+  margin: 150px 0 0;
+
+  &__title {
+    margin: 0 0 90px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--middle-offset);
+  }
+
+  &__text {
+    margin: 0 0 var(--big-offset);
+    font-size: 18px;
+    color: var(--black-color);
+  }
+
+  &__list {
+    grid-column: span 6;
+  }
+
+  &__item {
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      margin: 0 var(--middle-offset) 0 0;
+      height: 68px;
+      min-width: 68px;
+      background-image: url("../img/svg/icon-pasport.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 var(--big-offset);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descr {
+    margin: var(--middle-offset) 0 0;
+  }
+
+  &__warnings {
+    grid-column: 9 / span 4;
+  }
+
+  &__warning {
+    position: relative;
+    border-radius: 10px;
+    padding: var(--big-offset) 60px var(--big-offset) var(--middle-offset);
+    background-color: #ededed;
+
+    &::after {
+      content: "!";
+      position: absolute;
+      right: 20px;
+      bottom: 50%;
+      font-size: 96px;
+      color: var(--secondary-color);
+      opacity: 0.4;
+      transform: translateY(50%);
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 var(--big-offset);
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

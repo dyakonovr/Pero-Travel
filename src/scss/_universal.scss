@@ -18,6 +18,7 @@
 }
 
 .title {
+  margin: 0;
   font-size: 24px;
   line-height: 29px;
   color: var(--main-color);
@@ -67,6 +68,32 @@
   }
 }
 
+.btn-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+
+  svg {
+    stroke: #d4d4d4;
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--main-color);
+    }
+  }
+
+  &--active {
+    border: 2px solid var(--main-color);
+
+    svg {
+      stroke: var(--main-color);
+    }
+  }
+}
+
 .view-all {
   font-size: 14px;
   color: var(--black-color);
@@ -83,6 +110,49 @@
 
   &:hover::after {
     opacity: 0;
+  }
+}
+
+.custom-input {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: var(--middle-offset);
+    top: 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  input {
+    margin: 0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: var(--middle-offset) 45px var(--middle-offset) var(--middle-offset);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &--place {
+    &::after {
+      background-image: url("../img/svg/icon-mark.svg");
+    }
+  }
+
+  &--calendar {
+    &::after {
+      background-image: url("../img/svg/icon-calendar.svg");
+    }
+  }
+
+  &--people {
+    &::after {
+      background-image: url("../img/svg/icon-people.svg");
+    }
   }
 }
 

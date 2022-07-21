@@ -5,19 +5,18 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
-
 .main {
   background-color: #fbfbfb;
 }
+
+// универсальные стили
+
+@import "universal";
+
+// подключения компонентов страницы
 
 @import "./components/header";
 @import "./components/trs-hero";
 @import "./components/trs-filters";
 @import "./components/trs-tours";
 @import "./components/footer";
-
-// универсальные стили
-
-@import "universal";
-

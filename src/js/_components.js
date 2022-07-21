@@ -6,3 +6,4 @@ import "./components/trs-btns";
 import "./components/filters-reset";
 import "./components/like-btn";
 import "./components/tours-type";
+import "./components/route-slider";

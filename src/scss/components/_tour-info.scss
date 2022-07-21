@@ -1,0 +1,21 @@
+.info {
+  &__title {
+    margin: 150px 0 var(--middle-offset);
+  }
+
+  &__lower {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__text {
+    grid-column: span 4;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 6 / span 7;
+  }
+}
