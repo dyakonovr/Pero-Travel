@@ -9,6 +9,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--middle-offset);
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -51,6 +56,10 @@
 
   &__warnings {
     grid-column: 9 / span 4;
+
+    @include tablet {
+      margin: var(--big-offset) 0 0;
+    }
   }
 
   &__warning {

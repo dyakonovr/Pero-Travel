@@ -6,6 +6,11 @@
   &__lower {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -13,9 +18,22 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    align-content: center;
     grid-column: 6 / span 7;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: var(--middle-offset);
+
+    @include tablet {
+      margin: var(--big-offset) 0 0;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+
+    @include small-tablet {
+      font-size: 14px;
+    }
   }
 }

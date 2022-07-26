@@ -2,9 +2,9 @@
   margin: 150px 0 0;
 
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     margin: 90px 0 0;
+    gap: var(--middle-offset);
   }
 }

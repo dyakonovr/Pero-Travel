@@ -29,8 +29,8 @@
 }
 
 .title-main {
+  margin: 0;
   font-size: 72px;
-  line-height: 88px;
   color: var(--white-color);
 
   @include tablet {

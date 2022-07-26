@@ -12,4 +12,18 @@ const routeSwiper = new Swiper('.route-slider', {
     el: '.swiper-scrollbar',
     draggable: true,
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    }
+  }
 });
+
+
+routeSwiper.navigation.update()
