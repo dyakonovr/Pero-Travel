@@ -7,3 +7,4 @@ import "./components/filters-reset";
 import "./components/like-btn";
 import "./components/tours-type";
 import "./components/route-slider";
+import "./components/tours-datepicker";

@@ -97,6 +97,59 @@
         width: 100%;
       }
     }
+
+    &--calendar {
+      .qs-datepicker-container {
+        margin: var(--small-offset) 0 0;
+        border: none;
+        padding: 30px;
+        width: auto;
+        background-color: var(--gray-color);
+      }
+
+      .qs-controls {
+        margin: 0 0 var(--middle-offset);
+        background-color: var(--gray-color);
+      }
+
+      .qs-squares {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        margin: 0 auto;
+        width: auto;
+        background-color: var(--gray-color);
+        gap: var(--small-offset) var(--middle-offset);
+      }
+
+      .qs-square {
+        width: auto;
+      }
+
+      .qs-active {
+        color: var(--white-color);
+        background-color: var(--main-color);
+      }
+
+      .qs-month-year {
+        color: var(--main-color);
+      }
+
+      .qs-day {
+        color: var(--black-color);
+      }
+
+      .qs-left {
+        &::after {
+          border-right-color: var(--main-color);
+        }
+      }
+
+      .qs-right {
+        &::after {
+          border-left-color: var(--main-color);
+        }
+      }
+    }
   }
 
   &__submit {
