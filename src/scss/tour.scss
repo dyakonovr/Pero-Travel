@@ -10,17 +10,17 @@
 @import "universal";
 
 // подключения компонентов страницы
-@import "./components/header";
-@import "./components/tour-hero";
-@import "./components/tour-info";
-@import "./components/tour-schedule";
-@import "./components/tour-route";
-@import "./components/tour-addons";
-@import "./components/tour-important";
-@import "./components/gallery";
-@import "./components/feedback";
-@import "./components/tour-order";
-@import "./components/footer";
+@import "./components/universal/header";
+@import "./components/tour/hero";
+@import "./components/tour/info";
+@import "./components/tour/schedule";
+@import "./components/tour/route";
+@import "./components/tour/addons";
+@import "./components/tour/important";
+@import "./components/universal/gallery";
+@import "./components/universal/feedback";
+@import "./components/tour/order";
+@import "./components/universal/footer";
 
 // остальное
 

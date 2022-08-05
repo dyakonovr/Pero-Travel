@@ -6,15 +6,15 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
-@import "./components/idx-hero";
-@import "./components/idx-tours";
-@import "./components/idx-about";
-@import "./components/idx-kinds";
-@import "./components/gallery";
-@import "./components/feedback";
-@import "./components/idx-request";
-@import "./components/footer";
+@import "./components/universal/header";
+@import "./components/index/hero";
+@import "./components/index/tours";
+@import "./components/index/about";
+@import "./components/index/kinds";
+@import "./components/universal/gallery";
+@import "./components/universal/feedback";
+@import "./components/index/request";
+@import "./components/universal/footer";
 
 // универсальные стили
 

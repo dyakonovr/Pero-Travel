@@ -15,8 +15,8 @@
 
 // подключения компонентов страницы
 
-@import "./components/header";
-@import "./components/trs-hero";
-@import "./components/trs-filters";
-@import "./components/trs-tours";
-@import "./components/footer";
+@import "./components/universal/header";
+@import "./components/tours/hero";
+@import "./components/tours/filters";
+@import "./components/tours/tours";
+@import "./components/universal/footer";

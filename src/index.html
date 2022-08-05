@@ -2,24 +2,24 @@
 <html lang="ru" class="page">
 
 <head>
-  @include('partials/head.html')
+  @include('partials/universal/head.html')
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body class="page__body">
   <div class="site-container">
-    @include('partials/header.html')
+    @include('partials/universal/header.html')
     <main class="main">
-      @include('partials/idx-hero.html')
-      @include('partials/idx-tours.html')
-      @include('partials/idx-about.html')
-      @include('partials/idx-kinds.html')
-      @include('partials/gallery.html')
-      @include('partials/feedback.html')
-      @include('partials/idx-request.html')
+      @include('partials/index/hero.html')
+      @include('partials/index/tours.html')
+      @include('partials/index/about.html')
+      @include('partials/index/kinds.html')
+      @include('partials/universal/gallery.html')
+      @include('partials/universal/feedback.html')
+      @include('partials/index/request.html')
     </main>
 
-    @include('partials/footer.html')
+    @include('partials/universal/footer.html')
   </div>
 </body>
 
