@@ -1,0 +1,64 @@
+@mixin custom-datepicker {
+  .qs-datepicker-container {
+    margin: var(--small-offset) 0 0;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    width: auto;
+    background-color: var(--gray-color);
+
+    @include mobile {
+      padding: 10px;
+    }
+  }
+
+  .qs-month-year {
+    border: none;
+    color: var(--main-color);
+    cursor: auto;
+  }
+
+  .qs-controls {
+    margin: 0 0 var(--middle-offset);
+    background-color: var(--gray-color);
+  }
+
+  .qs-squares {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+    width: auto;
+    background-color: var(--gray-color);
+    gap: var(--small-offset) var(--middle-offset);
+
+    @include mobile {
+      gap: var(--small-offset);
+    }
+  }
+
+  .qs-square {
+    width: auto;
+  }
+
+  .qs-active {
+    color: var(--white-color);
+    background-color: var(--main-color);
+  }
+
+  .qs-day {
+    color: var(--black-color);
+  }
+
+  .qs-left {
+    &::after {
+      border-right-color: var(--main-color);
+    }
+  }
+
+  .qs-right {
+    &::after {
+      left: 54%;
+      border-left-color: var(--main-color);
+    }
+  }
+}

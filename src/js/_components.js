@@ -8,3 +8,4 @@ import "./components/like-btn";
 import "./components/tours-type";
 import "./components/route-slider";
 import "./components/tours-datepicker";
+import "./components/tour-datepicker";
