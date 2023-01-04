@@ -1,4 +1,5 @@
 import Swiper, { Navigation, Scrollbar } from 'swiper';
+import 'swiper/css';
 
 Swiper.use([Navigation, Scrollbar]);
 

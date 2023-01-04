@@ -1,5 +1,3 @@
-import noUiSlider from "../../vendor/nouislider.min.js";
-
 const rangeSlider = document.querySelector('.range-slider');
 
 if (rangeSlider) {

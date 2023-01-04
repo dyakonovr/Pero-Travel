@@ -1,22 +1,19 @@
-// базовые подключения
+// Стили для любой страницы
 
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import "./default/vars";
+@import "./default/mixins";
+@import "./default/fonts";
+@import "./default/vendor";
+@import "./default/universal";
+@import "./default/settings";
 
-.main {
-  background-color: #fbfbfb;
-}
-
-// универсальные стили
-
-@import "universal";
-
-// подключения компонентов страницы
-
+// Компоненты страницы
 @import "./components/universal/header";
 @import "./components/tours/hero";
 @import "./components/tours/filters";
 @import "./components/tours/tours";
 @import "./components/universal/footer";
+
+.main {
+  background-color: #fbfbfb;
+}

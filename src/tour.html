@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
 
-<head>
-  @include('partials/universal/head.html')
-  <link rel="stylesheet" href="css/tour.css">
-</head>
+@include('partials/universal/head.html', {
+"stylesFileName": "tour",
+"scriptsFileName": "tour",
+"title": "Pero Travel",
+"font_urls": ["montserrat-500", "montserrat-700", "montserrat-900"]
+})
 
-<body class="page__body">
-  <div class="site-container">
-    @include('partials/universal/header.html')
-    <main class="main">
-      @include('partials/tour/hero.html')
-      @include('partials/tour/info.html')
-      @include('partials/tour/schedule.html')
-      @include('partials/tour/route.html')
-      @include('partials/tour/addons.html')
-      @include('partials/tour/important.html')
-      @include('partials/universal/gallery.html')
-      @include('partials/universal/feedback.html')
-      @include('partials/tour/order.html')
-    </main>
-
-    @include('partials/universal/footer.html')
-  </div>
+<body>
+  @include('partials/universal/header.html')
+  <main class="main">
+    @include('partials/tour/hero.html')
+    @include('partials/tour/info.html')
+    @include('partials/tour/schedule.html')
+    @include('partials/tour/route.html')
+    @include('partials/tour/addons.html')
+    @include('partials/tour/important.html')
+    @include('partials/universal/gallery.html')
+    @include('partials/universal/feedback.html')
+    @include('partials/tour/order.html')
+  </main>
+  @include('partials/universal/footer.html')
 </body>
 
 </html>

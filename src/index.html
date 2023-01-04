@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru">
 
-<head>
-  @include('partials/universal/head.html')
-  <link rel="stylesheet" href="css/index.css">
-</head>
+@include('partials/universal/head.html', {
+"stylesFileName": "index",
+"scriptsFileName": "index",
+"title": "Pero Travel",
+"font_urls": ["montserrat-500", "montserrat-700", "montserrat-900"]
+})
 
-<body class="page__body">
-  <div class="site-container">
-    @include('partials/universal/header.html')
-    <main class="main">
-      @include('partials/index/hero.html')
-      @include('partials/index/tours.html')
-      @include('partials/index/about.html')
-      @include('partials/index/kinds.html')
-      @include('partials/universal/gallery.html')
-      @include('partials/universal/feedback.html')
-      @include('partials/index/request.html')
-    </main>
-
-    @include('partials/universal/footer.html')
-  </div>
+<body>
+  @include('partials/universal/header.html')
+  <main class="main">
+    @include('partials/index/hero.html')
+    @include('partials/index/tours.html')
+    @include('partials/index/about.html')
+    @include('partials/index/kinds.html')
+    @include('partials/universal/gallery.html')
+    @include('partials/universal/feedback.html')
+    @include('partials/index/request.html')
+  </main>
+  @include('partials/universal/footer.html')
 </body>
 
 </html>

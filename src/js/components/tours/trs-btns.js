@@ -1,4 +1,4 @@
-import { deleteClass } from "../universal/delete-class";
+import { deleteClass } from "../universal/delete-class.js";
 
 const btns = document.querySelectorAll('.parameter-btn');
 

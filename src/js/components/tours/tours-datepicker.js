@@ -1,5 +1,3 @@
-import datepicker from '../../vendor/datepicker.min.js'
-
 const calendarClass = '.datepicker-js';
 
 if (document.querySelector(calendarClass)) {
